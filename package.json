@@ -1,0 +1,16 @@
+{
+  "name": "color_game_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/kfungwm/Guess-Color-Game-.git",
+    "type": "git"
+  },
+  "author": "Kevin Fung <kevinfung87@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.2",
+    "html": "^1.0.0",
+    "morgan": "^1.8.1"
+  }
+}
