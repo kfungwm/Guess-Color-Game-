@@ -3,6 +3,8 @@ var express = require('express'),
 
 var app = express();
 
+var port = process.env.PORT || 3001;
+
 app.use(express.static('public'));
 app.use(morgan('dev'));
 // app.set('view engine', 'html');
@@ -13,6 +15,6 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/views/index.html');
 });
 
-app.listen(3000, () => {
-  console.log('Web server is now running on port 3000');
+app.listen(port, () => {
+  console.log('Web server started on port', app.get('port'));
 });
